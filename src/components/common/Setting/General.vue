@@ -54,7 +54,6 @@ const themeOptions: { label: string; key: Theme; icon: string }[] = [
 ]
 
 const languageOptions: { label: string; key: Language; value: Language }[] = [
-  { label: 'Tiếng Việt', key: 'vi-VN', value: 'vi-VN' },
   { label: '简体中文', key: 'zh-CN', value: 'zh-CN' },
   { label: '繁體中文', key: 'zh-TW', value: 'zh-TW' },
   { label: 'English', key: 'en-US', value: 'en-US' },
@@ -151,7 +150,6 @@ function handleImportButtonClick(): void {
           {{ $t('common.save') }}
         </NButton>
       </div>
-
       <div
         class="flex items-center space-x-4"
         :class="isMobile && 'items-start'"

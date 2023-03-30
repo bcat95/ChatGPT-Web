@@ -52,10 +52,12 @@ export default {
     setting: {
         setting: 'Cài đặt',
         general: 'Chung',
+        advanced: 'Nâng cao',
         config: 'Cấu hình',
         avatarLink: 'Liên kết Avatar',
         name: 'Tên',
         description: 'Mô tả',
+        role: 'Vai trò',
         resetUserInfo: 'Thiết lập lại Thông tin người dùng',
         chatHistory: 'Lịch sử Chat',
         theme: 'Giao diện',

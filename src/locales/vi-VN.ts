@@ -46,6 +46,8 @@ export default {
         deleteMessageConfirm: 'Bạn có chắc chắn muốn xóa tin nhắn này?',
         deleteHistoryConfirm: 'Bạn có chắc chắn muốn xóa lịch sử này?',
         clearHistoryConfirm: 'Bạn có chắc chắn muốn xóa toàn bộ lịch sử chat?',
+        preview: 'Xem trước',
+        showRawText: 'Hiển thị dưới dạng văn bản thô',
     },
     setting: {
         setting: 'Cài đặt',

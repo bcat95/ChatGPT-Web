@@ -46,7 +46,7 @@ onMounted(() => {
       </h2>
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
         <p>
-          此项目开源于
+          Dự án này là mã nguồn mở trên
           <a
             class="text-blue-600 dark:text-blue-500"
             href="https://github.com/Chanzhaoyu/chatgpt-web"
@@ -54,10 +54,17 @@ onMounted(() => {
           >
             Github
           </a>
-          ，免费且基于 MIT 协议，没有任何形式的付费行为！
+          ， miễn phí và dựa trên thỏa thuận của MIT, không có bất kỳ hình thức thanh toán nào!
         </p>
         <p>
-          如果你觉得此项目对你有帮助，请在 Github 帮我点个 Star 或者给予一点赞助，谢谢！
+         Nếu bạn cho rằng dự án này hữu ích với bạn, vui lòng cho tôi một ngôi sao trên Github hoặc 
+         <a
+            class="text-blue-600 dark:text-blue-500"
+            href="https://coffee.chatgptvietnam.org/"
+            target="_blank"
+          >
+            tài trợ
+          </a> cho tôi một chút, xin cảm ơn!
         </p>
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>

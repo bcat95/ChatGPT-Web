@@ -29,7 +29,7 @@ export default {
     },
     chat: {
         newChatButton: 'Cuộc trò truyện mới',
-        placeholder: 'Hỏi tôi điều gì đó...(Shift + Enter = xuống dòng)',
+        placeholder: 'Hỏi tôi bất cứ điều gì...(Shift + Enter = ngắt dòng, "/" để kích hoạt lời nhắc)',
         placeholderMobile: 'Hỏi tôi điều gì đó...',
         copy: 'Sao chép',
         copied: 'Đã sao chép',

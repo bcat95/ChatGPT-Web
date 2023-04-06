@@ -69,6 +69,7 @@ export default {
     socks: 'Socks',
     httpsProxy: 'HTTPS Proxy',
     balance: 'API余額',
+    monthlyUsage: '本月使用量',
   },
   store: {
     local: '本機',

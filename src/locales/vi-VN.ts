@@ -69,6 +69,7 @@ export default {
         socks: 'Socks',
         httpsProxy: 'HTTPS Proxy',
         balance: 'Số dư API',
+        monthlyUsage: 'Sử dụng hàng tháng',
     },
     store: {
         local: 'Địa phương',

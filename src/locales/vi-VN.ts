@@ -28,6 +28,7 @@ export default {
         unauthorizedTips: 'Không được phép, vui lòng xác thực trước.',
     },
     chat: {
+        newChatButton: 'Cuộc trò truyện mới',
         placeholder: 'Hỏi tôi điều gì đó...(Shift + Enter = xuống dòng)',
         placeholderMobile: 'Hỏi tôi điều gì đó...',
         copy: 'Sao chép',

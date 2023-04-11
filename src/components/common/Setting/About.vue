@@ -54,7 +54,7 @@ onMounted(() => {
           >
             Github
           </a>
-          ， miễn phí và dựa trên thỏa thuận của MIT, không có bất kỳ hình thức thanh toán nào!
+          , miễn phí và dựa trên thỏa thuận của MIT, không có bất kỳ hình thức thanh toán nào!
         </p>
         <p>
          Nếu bạn cho rằng dự án này hữu ích với bạn, vui lòng cho tôi một ngôi sao trên Github hoặc 

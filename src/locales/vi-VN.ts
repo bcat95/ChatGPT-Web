@@ -59,6 +59,8 @@ export default {
         name: 'Tên',
         description: 'Mô tả',
         role: 'Vai trò',
+        temperature: 'Temperature',
+        top_p: 'Top_p',
         resetUserInfo: 'Thiết lập lại Thông tin người dùng',
         chatHistory: 'Lịch sử Chat',
         theme: 'Giao diện',

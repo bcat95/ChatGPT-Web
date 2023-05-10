@@ -40,8 +40,16 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
   if (isNotEmptyString(process.env.OPENAI_API_KEY)) {
     const OPENAI_API_BASE_URL = process.env.OPENAI_API_BASE_URL
 
+    let randomApiKey = process.env.OPENAI_API_KEY;
+
+    if (isNotEmptyString(process.env.OPENAI_API_KEY_ARR)){
+      const OPENAI_API_KEY_ARR = process.env.OPENAI_API_KEY_ARR;
+      const randomIndex = Math.floor(Math.random() * OPENAI_API_KEY_ARR.length);
+      randomApiKey = OPENAI_API_KEY_ARR[randomIndex];
+    }
+
     const options: ChatGPTAPIOptions = {
-      apiKey: process.env.OPENAI_API_KEY,
+      apiKey: randomApiKey,
       completionParams: { model },
       debug: !disableDebug,
     }
@@ -119,8 +127,14 @@ async function chatReplyProcess(options: RequestOptions) {
 }
 
 async function fetchUsage() {
-  const OPENAI_API_KEY = process.env.OPENAI_API_KEY
+  let OPENAI_API_KEY = process.env.OPENAI_API_KEY
   const OPENAI_API_BASE_URL = process.env.OPENAI_API_BASE_URL
+
+  if (isNotEmptyString(process.env.OPENAI_API_KEY_ARR)){
+    const OPENAI_API_KEY_ARR = process.env.OPENAI_API_KEY_ARR;
+    const randomIndex = Math.floor(Math.random() * OPENAI_API_KEY_ARR.length);
+    OPENAI_API_KEY = OPENAI_API_KEY_ARR[randomIndex];
+  }
 
   if (!isNotEmptyString(OPENAI_API_KEY))
     return Promise.resolve('-')

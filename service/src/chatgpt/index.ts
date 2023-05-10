@@ -43,7 +43,7 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
     let randomApiKey = process.env.OPENAI_API_KEY;
 
     if (isNotEmptyString(process.env.OPENAI_API_KEY_ARR)){
-      const OPENAI_API_KEY_ARR = process.env.OPENAI_API_KEY_ARR;
+      const OPENAI_API_KEY_ARR = JSON.parse(process.env.OPENAI_API_KEY_ARR);
       const randomIndex = Math.floor(Math.random() * OPENAI_API_KEY_ARR.length);
       randomApiKey = OPENAI_API_KEY_ARR[randomIndex];
     }
@@ -131,7 +131,7 @@ async function fetchUsage() {
   const OPENAI_API_BASE_URL = process.env.OPENAI_API_BASE_URL
 
   if (isNotEmptyString(process.env.OPENAI_API_KEY_ARR)){
-    const OPENAI_API_KEY_ARR = process.env.OPENAI_API_KEY_ARR;
+    const OPENAI_API_KEY_ARR = JSON.parse(process.env.OPENAI_API_KEY_ARR);
     const randomIndex = Math.floor(Math.random() * OPENAI_API_KEY_ARR.length);
     OPENAI_API_KEY = OPENAI_API_KEY_ARR[randomIndex];
   }

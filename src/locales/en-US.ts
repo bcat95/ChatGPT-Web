@@ -26,6 +26,7 @@ export default {
     failed: 'Failed',
     verify: 'Verify',
     unauthorizedTips: 'Unauthorized, please verify first.',
+    stopResponding: 'Stop Responding',
   },
   chat: {
     newChatButton: 'New Chat',
@@ -74,6 +75,7 @@ export default {
     monthlyUsage: 'Monthly Usage',
   },
   store: {
+    siderButton: 'Prompt Store',
     local: 'Local',
     online: 'Online',
     title: 'Title',

@@ -21,7 +21,7 @@ const ErrorCodeMessage: Record<string, string> = {
   503: '[OpenAI] Máy chủ đang bận, vui lòng thử lại sau',
   504: '[OpenAI] Hết thời gian yêu cầu',
   500: '[OpenAI] Lỗi máy chủ nội bộ',
-  429: '[OpenAI] Máy chủ quá tải, hãy dùng luân phiên mentor.chatvn.org và chatgpt.chatvn.org hoặc chatgpt2.chatvn.org',
+  429: '[OpenAI] Máy chủ quá tải, hãy dùng luân phiên mentor.chatvn.org và chatgpt.chatvn.org hoặc chatgpt2.chatvn.org .Thông báo lý do quá tải: https://chatvn.org/page/thong-bao-ve-tinh-trang-may-chu-va-ngan-sach-cho-chatvn-org/',
 }
 
 const timeoutMs: number = !isNaN(+process.env.TIMEOUT_MS) ? +process.env.TIMEOUT_MS : 100 * 1000

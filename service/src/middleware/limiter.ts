@@ -12,7 +12,7 @@ const limiter = rateLimit({
   max: maxCount,
   statusCode: 200, // 200 means success，but the message is 'Too many request from this IP in 1 hour'
   message: async (req, res) => {
-    res.send({ status: 'Fail', message: 'Too many request from this IP in 1 hour', data: null })
+    res.send({ status: 'Fail', message: 'Giới hạn trò chuyện trong 1h, bạn hãy sử dụng https://mentor.chatvn.org để chat không giới hạn.', data: null })
   },
 })
 

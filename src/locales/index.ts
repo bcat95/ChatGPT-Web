@@ -18,7 +18,7 @@ const i18n = createI18n({
   messages: {
     'vi-VN': viVN,
     'en-US': enUS,
-    'zh-CN': zhCN,
+		'zh-CN': zhCN,
     'zh-TW': zhTW,
   },
 })

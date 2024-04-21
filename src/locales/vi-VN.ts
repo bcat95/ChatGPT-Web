@@ -74,6 +74,7 @@ export default {
         monthlyUsage: 'Sử dụng hàng tháng',
     },
     store: {
+        siderButton: 'Thư viện Prompt',
         local: 'Địa phương',
         online: 'Trực tuyến',
         title: 'Tiêu đề',

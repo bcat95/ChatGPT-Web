@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { viVN, enUS, zhCN, zhTW } from 'naive-ui'
+import { viVN, enUS } from 'naive-ui'
 import { useAppStore } from '@/store'
 import { setLocale } from '@/locales'
 
@@ -14,15 +14,9 @@ export function useLanguage() {
       case 'en-US':
         setLocale('en-US')
         return enUS
-      case 'zh-CN':
-        setLocale('zh-CN')
-        return zhCN
-      case 'zh-TW':
-        setLocale('zh-TW')
-        return zhTW
       default:
-        setLocale('en-US')
-        return enUS
+        setLocale('vi-VN')
+        return viVN
     }
   })
 

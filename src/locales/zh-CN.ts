@@ -26,6 +26,7 @@ export default {
     failed: '操作失败',
     verify: '验证',
     unauthorizedTips: '未经授权，请先进行验证。',
+		stopResponding: '停止响应',
   },
   chat: {
     newChatButton: '新建聊天',
@@ -74,6 +75,7 @@ export default {
     monthlyUsage: '本月使用量',
   },
   store: {
+    siderButton: '提示词商店',
     local: '本地',
     online: '在线',
     title: '标题',

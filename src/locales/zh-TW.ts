@@ -26,9 +26,10 @@ export default {
     failed: '操作失敗',
     verify: '驗證',
     unauthorizedTips: '未經授權，請先進行驗證。',
+    stopResponding: '停止回應',
   },
   chat: {
-    newChatButton: '新建對話',
+    newChatButton: '新增對話',
     placeholder: '來說點什麼...（Shift + Enter = 換行，"/" 觸發提示詞）',
     placeholderMobile: '來說點什麼...',
     copy: '複製',
@@ -53,7 +54,7 @@ export default {
   setting: {
     setting: '設定',
     general: '總覽',
-    advanced: '高級',
+    advanced: '進階',
     config: '設定',
     avatarLink: '頭貼連結',
     name: '名稱',
@@ -70,10 +71,11 @@ export default {
     timeout: '逾時',
     socks: 'Socks',
     httpsProxy: 'HTTPS Proxy',
-    balance: 'API余額',
+    balance: 'API Credit 餘額',
     monthlyUsage: '本月使用量',
   },
   store: {
+    siderButton: '提示詞商店',
     local: '本機',
     online: '線上',
     title: '標題',

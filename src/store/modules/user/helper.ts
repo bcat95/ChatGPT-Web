@@ -15,9 +15,9 @@ export interface UserState {
 export function defaultSetting(): UserState {
   return {
     userInfo: {
-      avatar: 'https://chatgptvietnam.org/assets/favicon.png',
-      name: 'chatgptvietnam.org',
-      description: 'Trải nghiệm ngay <a href="https://chatgptvietnam.org" class="text-blue-500" target="_blank" >ChatGPT Vietnamese không cần tài khoản</a>',
+      avatar: 'https://chatvn.org/assets/favicon.png',
+      name: 'chatvn.org',
+      description: 'Trải nghiệm ngay <a href="https://chatvn.org" class="text-blue-500" target="_blank" >Chat GPT không cần tài khoản</a>',
     },
   }
 }

@@ -40,6 +40,8 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
   if (isNotEmptyString(process.env.OPENAI_API_KEY)) {
     const OPENAI_API_BASE_URL = process.env.OPENAI_API_BASE_URL
 
+    console.log('OPENAI_API_BASE_URL',OPENAI_API_BASE_URL);
+
     let randomApiKey = process.env.OPENAI_API_KEY;
 
     if (isNotEmptyString(process.env.OPENAI_API_KEY_ARR)){
@@ -183,7 +185,8 @@ function formatDate(): string[] {
 }
 
 async function chatConfig() {
-  const usage = await fetchUsage()
+  // const usage = await fetchUsage()
+  const usage = 50
   const reverseProxy = process.env.API_REVERSE_PROXY ?? '-'
   const httpsProxy = (process.env.HTTPS_PROXY || process.env.ALL_PROXY) ?? '-'
   const socksProxy = (process.env.SOCKS_PROXY_HOST && process.env.SOCKS_PROXY_PORT)

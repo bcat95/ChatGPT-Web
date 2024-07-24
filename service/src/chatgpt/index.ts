@@ -15,13 +15,13 @@ const { HttpsProxyAgent } = httpsProxyAgent
 dotenv.config()
 
 const ErrorCodeMessage: Record<string, string> = {
-  401: '[OpenAI] Đã cung cấp khóa API không chính xác',
-  403: '[OpenAI] Máy chủ từ chối truy cập, vui lòng thử lại sau',
-  502: '[OpenAI] Cổng xấu',
-  503: '[OpenAI] Máy chủ đang bận, vui lòng thử lại sau',
-  504: '[OpenAI] Hết thời gian yêu cầu',
-  500: '[OpenAI] Lỗi máy chủ nội bộ',
-  429: '[OpenAI] Máy chủ quá tải, hãy dùng luân phiên mentor.chatvn.org và chatgpt.chatvn.org hoặc chatgpt2.chatvn.org .Thông báo lý do quá tải: https://chatvn.org/page/thong-bao-ve-tinh-trang-may-chu-va-ngan-sach-cho-chatvn-org/',
+  401: '[Chatvn] Đã cung cấp khóa API không chính xác',
+  403: '[Chatvn] Máy chủ từ chối truy cập, vui lòng thử lại sau',
+  502: '[Chatvn] Cổng xấu',
+  503: '[Chatvn] Máy chủ đang bận, vui lòng thử lại sau',
+  504: '[Chatvn] Hết thời gian yêu cầu',
+  500: '[Chatvn] Lỗi máy chủ nội bộ',
+  429: '[Chatvn] Máy chủ quá tải, thử lại sau',
 }
 
 const timeoutMs: number = !isNaN(+process.env.TIMEOUT_MS) ? +process.env.TIMEOUT_MS : 100 * 1000
